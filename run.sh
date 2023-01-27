@@ -13,7 +13,7 @@ cores=$((2 * $(grep ^cpu\\scores /proc/cpuinfo | uniq |  awk '{print $4}')))
 security_cores=0
 
 # threshold value, from we decide a core is fully used or not, in procent.
-THRESHOLD=98.0
+THRESHOLD=90.0
 
 # creates loads array
 loads_tresh=()
